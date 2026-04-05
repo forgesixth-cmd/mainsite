@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/forgeinvoice",
+      "destination": "https://forgeinvoice.vercel.app/forgeinvoice"
+    },
+    {
+      "source": "/forgeinvoice/:path*",
+      "destination": "https://forgeinvoice.vercel.app/forgeinvoice/:path*"
+    }
+  ]
+}
