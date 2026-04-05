@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#f6e8c3] to-[#e8eef7] text-gray-900">
@@ -39,13 +41,16 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
+          <Link
+            href="/forgeinvoice"
+            className="block bg-white rounded-2xl p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
             <p className="text-xs text-gray-500">LIVE</p>
             <h4 className="font-semibold mt-2">ForgeInvoice</h4>
             <p className="text-sm text-gray-600 mt-2">
               Create international invoices in seconds.
             </p>
-          </div>
+          </Link>
 
           <div className="bg-white/70 rounded-2xl p-6">
             <p className="text-xs text-gray-500">COMING</p>
