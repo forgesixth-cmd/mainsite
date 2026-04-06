@@ -7,6 +7,14 @@
     {
       "source": "/forgeinvoice/:path*",
       "destination": "https://forgeinvoice.vercel.app/forgeinvoice/:path*"
+    },
+    {
+      "source": "/forgefitness",
+      "destination": "https://forgefitness.vercel.app"
+    },
+    {
+      "source": "/forgefitness/:path*",
+      "destination": "https://forgefitness.vercel.app/:path*"
     }
   ]
 }
