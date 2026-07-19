@@ -8,7 +8,7 @@ export default function Home() {
       <header className="flex justify-between items-center px-8 py-6">
         <h1 className="text-lg font-semibold">SixthForge</h1>
         <div className="flex gap-6 text-sm text-gray-600">
-          <a href="#">Products</a>
+          <a href="#products">Products</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
         </div>
@@ -30,13 +30,16 @@ export default function Home() {
           and modern teams.
         </p>
 
-        <button className="bg-black text-white px-6 py-3 rounded-xl">
+        <a
+          href="#products"
+          className="inline-block bg-black text-white px-6 py-3 rounded-xl"
+        >
           Explore Products
-        </button>
+        </a>
       </section>
 
       {/* PRODUCTS */}
-      <section className="px-6 mt-20 max-w-5xl mx-auto">
+      <section id="products" className="px-6 mt-20 max-w-5xl mx-auto">
         <h3 className="text-xl font-semibold mb-6">Products</h3>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -52,19 +55,22 @@ export default function Home() {
             </p>
           </Link>
 
+          <Link
+            href="/personal-expense-tracker"
+            className="block bg-white rounded-2xl p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <p className="text-xs text-gray-500">LIVE</p>
+            <h4 className="font-semibold mt-2">Expense Tracker</h4>
+            <p className="text-sm text-gray-600 mt-2">
+              Indian bank statement intelligence — login online, ledger stays on your device.
+            </p>
+          </Link>
+
           <div className="bg-white/70 rounded-2xl p-6">
             <p className="text-xs text-gray-500">COMING</p>
             <h4 className="font-semibold mt-2">ForgeFlow</h4>
             <p className="text-sm text-gray-600 mt-2">
               Workflow automation for solo founders.
-            </p>
-          </div>
-
-          <div className="bg-white/70 rounded-2xl p-6">
-            <p className="text-xs text-gray-500">COMING</p>
-            <h4 className="font-semibold mt-2">ForgeTrack</h4>
-            <p className="text-sm text-gray-600 mt-2">
-              Lightweight analytics for SaaS teams.
             </p>
           </div>
 
