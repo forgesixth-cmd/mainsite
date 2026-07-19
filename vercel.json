@@ -15,6 +15,14 @@
     {
       "source": "/forgefitness/:path*",
       "destination": "https://forgefitness.vercel.app/:path*"
+    },
+    {
+      "source": "/personal-expense-tracker",
+      "destination": "https://sixthforge-personal-expense-tracker.vercel.app/personal-expense-tracker"
+    },
+    {
+      "source": "/personal-expense-tracker/:path*",
+      "destination": "https://sixthforge-personal-expense-tracker.vercel.app/personal-expense-tracker/:path*"
     }
   ]
 }
