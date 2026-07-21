@@ -23,6 +23,14 @@
     {
       "source": "/personal-expense-tracker/:path*",
       "destination": "https://sixthforge-personal-expense-tracker.vercel.app/personal-expense-tracker/:path*"
+    },
+    {
+      "source": "/myforgefitness",
+      "destination": "https://myforgefitness.vercel.app/myforgefitness"
+    },
+    {
+      "source": "/myforgefitness/:path*",
+      "destination": "https://myforgefitness.vercel.app/myforgefitness/:path*"
     }
   ]
 }
